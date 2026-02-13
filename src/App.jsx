@@ -1,7 +1,6 @@
 import { Navbar, Footer } from './components/layout';
 import { ScrollToTop } from './components/ui';
 import { Hero, About, Projects, Skills, Contact } from './sections';
-import './styles/animations.css';
 import './App.css';
 
 function App() {

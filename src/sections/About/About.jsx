@@ -1,15 +1,12 @@
-import { useScrollAnimation } from '../../hooks';
 import './About.css';
 
 function About() {
-  const [ref, isVisible] = useScrollAnimation(0.2);
-
   return (
-    <section id="about" className="about" ref={ref}>
-      <div className={`about-container ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+    <section id="about" className="about">
+      <div className="about-container">
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
-          <div className={`about-text ${isVisible ? 'animate-fade-in-left animate-delay-200' : 'opacity-0'}`}>
+          <div className="about-text">
             <p>
               Hello! I'm Mahmoud Tarek, a passionate developer who loves building
               things for the web. My interest in web development started back in
@@ -31,7 +28,7 @@ function About() {
               <li>SQL</li>
             </ul>
           </div>
-          <div className={`about-image ${isVisible ? 'animate-fade-in-right animate-delay-300' : 'opacity-0'}`}>
+          <div className="about-image">
             <div className="about-image-wrapper">
               {/* Add your photo here */}
               <div className="about-image-placeholder">Photo</div>

@@ -32,3 +32,10 @@
   background-color: var(--color-primary);
   color: white;
 }
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}

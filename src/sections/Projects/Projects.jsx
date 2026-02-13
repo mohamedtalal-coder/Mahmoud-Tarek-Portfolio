@@ -1,5 +1,4 @@
 import { Button } from '../../components/ui';
-import { useScrollAnimation } from '../../hooks';
 import './Projects.css';
 
 const projects = [
@@ -33,19 +32,13 @@ const projects = [
 ];
 
 function Projects() {
-  const [ref, isVisible] = useScrollAnimation(0.1);
-
   return (
-    <section id="projects" className="projects" ref={ref}>
-      <div className={`projects-container ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+    <section id="projects" className="projects">
+      <div className="projects-container">
         <h2 className="section-title">Featured Projects</h2>
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <article 
-              key={project.id} 
-              className={`project-card ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}
-              style={{ animationDelay: `${0.2 + index * 0.15}s` }}
-            >
+          {projects.map((project) => (
+            <article key={project.id} className="project-card">
               <div className="project-image">
                 <div className="project-image-placeholder">Preview</div>
               </div>
