@@ -1,4 +1,5 @@
 import './About.css';
+import profileImage from '../../assets/WhatsApp Image 2026-02-14 at 1.34.21 AM.jpeg';
 
 function About() {
   return (
@@ -8,30 +9,35 @@ function About() {
         <div className="about-content">
           <div className="about-text">
             <p>
-              Hello! I'm Mahmoud Tarek, a passionate developer who loves building
-              things for the web. My interest in web development started back in
-              2015 when I decided to try editing custom themes — turns out that 
-              taught me a lot about HTML & CSS!
+              I've always enjoyed solving problems and understanding how small details 
+              connect to a bigger picture. Over time, that curiosity turned into a 
+              strong interest in working with data.
             </p>
             <p>
-              Fast-forward to today, I've had the privilege of working on various
-              projects that have helped me grow as a developer. My main focus these
-              days is building accessible, inclusive products and digital experiences.
+              I enjoy transforming complex or messy data into clear insights that are 
+              easy to understand and act on. Whether I'm cleaning raw data, analyzing 
+              trends, or building dashboards, my goal is always the same: make data 
+              useful, accurate, and meaningful.
             </p>
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>
+              For me, data analysis isn't just about numbers—it's about telling a clear 
+              story that helps people make better decisions. My expertise spans data 
+              cleaning, analysis, visualization, and storytelling, helping bridge the 
+              gap between raw data and strategic business objectives.
+            </p>
+            <p>Here are a few areas I specialize in:</p>
             <ul className="about-skills">
-              <li>JavaScript (ES6+)</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>TypeScript</li>
-              <li>Python</li>
-              <li>SQL</li>
+              <li>Data Cleaning</li>
+              <li>Data Analysis</li>
+              <li>Data Visualization</li>
+              <li>Dashboard Building</li>
+              <li>Data Storytelling</li>
+              <li>Business Insights</li>
             </ul>
           </div>
           <div className="about-image">
             <div className="about-image-wrapper">
-              {/* Add your photo here */}
-              <div className="about-image-placeholder">Photo</div>
+              <img src={profileImage} alt="Mahmoud Tarek" className="about-photo" />
             </div>
           </div>
         </div>

@@ -3,20 +3,20 @@ import './Skills.css';
 
 const skillCategories = [
   {
-    title: 'Frontend',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'TypeScript', 'Tailwind CSS'],
+    title: 'Data Visualization',
+    skills: ['Power BI', 'DAX', 'Data Modeling', 'Dashboard Design', 'Report Building'],
   },
   {
-    title: 'Backend',
-    skills: ['Node.js', 'Express', 'Python', 'Django', 'REST APIs', 'GraphQL'],
+    title: 'Data Analysis',
+    skills: ['Excel', 'Data Cleaning', 'ETL', 'Statistical Analysis', 'Trend Analysis'],
   },
   {
-    title: 'Database',
-    skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Firebase'],
+    title: 'Database & Query',
+    skills: ['SQL', 'Data Extraction', 'Data Transformation', 'Database Management'],
   },
   {
-    title: 'Tools & Others',
-    skills: ['Git', 'Docker', 'AWS', 'CI/CD', 'Linux', 'Agile'],
+    title: 'Soft Skills',
+    skills: ['Data Storytelling', 'Problem Solving', 'Business Insights', 'Critical Thinking'],
   },
 ];
 

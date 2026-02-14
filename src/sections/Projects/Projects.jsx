@@ -1,33 +1,43 @@
 import { Button } from '../../components/ui';
 import './Projects.css';
 
+import project1Img from '../../assets/WhatsApp Image 2026-02-14 at 7.08.28 PM.jpeg';
+import project2Img from '../../assets/WhatsApp Image 2026-02-14 at 7.08.39 PM.jpeg';
+import project3Img from '../../assets/WhatsApp Image 2026-02-14 at 7.09.45 PM.jpeg';
+import project4Img from '../../assets/WhatsApp Image 2026-02-14 at 7.10.00 PM.jpeg';
+
 const projects = [
   {
     id: 1,
-    title: 'Project One',
+    title: 'HR Dashboard',
     description:
-      'A web application built with React and Node.js. Features include user authentication, real-time updates, and responsive design.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+      'An interactive HR analytics dashboard providing insights into employee demographics, headcount trends, department distribution, and workforce metrics to support strategic HR decisions.',
+    technologies: ['Power BI', 'Excel', 'Data Analysis', 'DAX'],
+    image: project1Img,
   },
   {
     id: 2,
-    title: 'Project Two',
+    title: 'Sales Dashboard',
     description:
-      'An e-commerce platform with modern UI/UX. Includes shopping cart, payment integration, and admin dashboard.',
-    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+      'A comprehensive sales performance dashboard tracking revenue trends, regional sales distribution, product performance, and key KPIs to drive data-informed business strategies.',
+    technologies: ['Power BI', 'SQL', 'Data Visualization', 'Excel'],
+    image: project2Img,
   },
   {
     id: 3,
-    title: 'Project Three',
+    title: 'Business Analytics Dashboard',
     description:
-      'A mobile-first application for task management. Features drag-and-drop, notifications, and team collaboration.',
-    technologies: ['React Native', 'Firebase', 'Redux'],
-    github: 'https://github.com',
-    live: 'https://example.com',
+      'A dynamic business intelligence dashboard consolidating key metrics, trend analysis, and performance indicators to enable quick decision-making and operational insights.',
+    technologies: ['Power BI', 'Data Modeling', 'ETL', 'DAX'],
+    image: project3Img,
+  },
+  {
+    id: 4,
+    title: 'Employee Workforce Dashboard',
+    description:
+      'An employee workforce analytics dashboard visualizing staffing levels, performance metrics, attendance patterns, and workforce planning data for HR optimization.',
+    technologies: ['Power BI', 'Excel', 'HR Analytics', 'Data Cleaning'],
+    image: project4Img,
   },
 ];
 
@@ -40,7 +50,7 @@ function Projects() {
           {projects.map((project) => (
             <article key={project.id} className="project-card">
               <div className="project-image">
-                <div className="project-image-placeholder">Preview</div>
+                <img src={project.image} alt={project.title} className="project-img" />
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
@@ -50,12 +60,6 @@ function Projects() {
                     <li key={tech}>{tech}</li>
                   ))}
                 </ul>
-                <div className="project-links">
-                  <Button variant="secondary" href={project.github}>
-                    GitHub
-                  </Button>
-                  <Button href={project.live}>Live Demo</Button>
-                </div>
               </div>
             </article>
           ))}
